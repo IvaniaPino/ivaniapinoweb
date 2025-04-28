@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contáctanos!</title>
+      <link rel="stylesheet" href="../styles/styles.css">
+   </head>
+   <body>
+      <header>
+         <h1><strong>Contáctanos</strong></h1>
+      </header>
+      <nav>
+         <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="frutasfrescas.html">Frutas Frescas</a></li>
+            <li><a href="frutassecas.html">Frutas Secas</a></li>
+            <li><a href="mermeladas.html">Mermeladas</a></li>
+            <li><a href="recetasconfrutas.html">Recetas con Frutas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+         </ul>
+      </nav>
+      <main>
+         <h2>Conoce nuestra historia:</h2>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <h2>¿Dudas? ¿Peticiones de productos? ¿Compras al por mayor? ¡Hablemos!</h2>
+         <form action="/enviar_formulario" method="post">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="correo">Correo Electrónico:</label><br>
+            <input type="email" id="correo" name="correo" required><br><br>
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono"><br><br>
+            <label for="motivo">Motivo de Contacto:</label><br>
+            <textarea id="motivo" name="motivo" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" value="Enviar">
+         </form>
+      </main>
+      <footer>
+         <p>Horario de atención:</p>
+         <ul>
+            <li>Lunes: 09:00 hrs - 19:00 hrs</li>
+            <li>Martes: 09:00 hrs - 19:00 hrs</li>
+            <li>Miércoles: 09:00 hrs - 19:00 hrs</li>
+            <li>Jueves: 09:00 hrs - 19:00 hrs</li>
+            <li>Viernes: 09:00 hrs - 19:00 hrs</li>
+            <li>Sábado: 09:00 hrs - 19:00 hrs</li>
+            <li>Domingo: Cerrado</li>
+         </ul>
+         <p>Frutal, derechos reservados</p>
+         <div class="redes-sociales">
+            <a href="https://wa.me/00112233">WhatsApp</a>
+            <a href="https://www.instagram.com/lacosecha.llanquihue?igsh=ZzdreTdha3I5cjVi">Instagram</a>
+            <a href="mailto:contacto@frutal.com">Correo</a>
+         </div>
+      </footer>
+   </body>
+</html>
