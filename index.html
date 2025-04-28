@@ -1,92 +1,124 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Frutal</title>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <header>
-        <h1 class="titulo"><strong>Frutal</strong></h1>
-        
-        <nav class="menu"
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./pages/frutasfrescas.html">Frutas Frescas</a></li>
-                <li><a href="./pages/frutassecas.html">Frutas Secas</a></li>
-                <li><a href="./pages/mermeladas.html">Mermeladas</a></li>
-                <li><a href="./pages/recetasconfrutas.html">Recetas con Frutas</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="bg-success text-white text-center py-4">
+        <h1 class="fw-bold">Frutal</h1>
     </header>
 
-    <main>
-        <section>
-            <h2>¡Bienvenido!</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla dolorem officiis delectus magni necessitatibus? Doloribus inventore, ratione aperiam quasi error aliquam ut beatae quidem repellat iure, omnis illo placeat qui.</p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active btn btn-primary text-white" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/frutasfrescas.html">Frutas Frescas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/frutassecas.html">Frutas Secas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/mermeladas.html">Mermeladas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/recetasconfrutas.html">Recetas con Frutas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/carrito.html">Carrito</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-4">
+        <section class="text-center bg-light p-5 rounded shadow-lg">
+            <h2 class="fw-bold">¡Bienvenido a Frutal!</h2>
+            <p class="lead">Descubre la frescura y calidad de nuestras frutas. Ofrecemos productos saludables y naturales para ti.</p>
         </section>
 
         <section>
-            <h2>Ofertas</h2>
-            <div class="productos-container">
-                <article class="productos">
-                    <h3>Naranja Kilo</h3>
-                    <p>$2.000</p>
-                    <img src="assets/img/naranjas.jpg" alt="Kilo de naranja">
-                    <button class="carrito">Añadir al carrito</button>
-                </article>
-                <article class="productos">
-                    <h3>Manzana verde kilo</h3>
-                    <p>$1.800</p>
-                    <img src="assets/img/manzanaverde.jpg" alt="manzana verde">
-                    <button class="carrito">Añadir al carrito</button>
-                </article>
-                <article class="productos">
-                    <h3>Uva rosada kilo</h3>
-                    <p>$4.500</p>
-                    <img src="assets/img/uvamorada.jpg" alt="Uva rosada">
-                    <button class="carrito">Añadir al carrito</button>
-                </article>
+            <h2 class="text-center my-4">Ofertas</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card text-center shadow">
+                        <img src="assets/img/naranjas.jpg" class="card-img-top" alt="Kilo de naranja">
+                        <div class="card-body">
+                            <h3 class="card-title">Naranja Kilo</h3>
+                            <p class="card-text">$2.000</p>
+                            <button class="btn btn-success">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center shadow">
+                        <img src="assets/img/manzanaverde.jpg" class="card-img-top" alt="Manzana verde">
+                        <div class="card-body">
+                            <h3 class="card-title">Manzana verde kilo</h3>
+                            <p class="card-text">$1.800</p>
+                            <button class="btn btn-success">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center shadow">
+                        <img src="assets/img/uvamorada.jpg" class="card-img-top" alt="Uva rosada">
+                        <div class="card-body">
+                            <h3 class="card-title">Uva rosada kilo</h3>
+                            <p class="card-text">$4.500</p>
+                            <button class="btn btn-success">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        
+
         <section>
-            <h2>Novedades</h2>
-            <div class="productos-novedades">
-                <article class="productosnov">
-                    <h3>Kiwi deshidratado 500 GR</h3>
-                    <p>$5.000</p>
-                    <img src="assets/img/kiwi-dried-white.jpg" alt="Kiwi deshidratado">
-                    <button class="carrito-nov">Añadir al carrito</button>
-                </article>
-                <article class="productosnove">
-                    <h3>Mermelada de ciruela, 500GR</h3>
-                    <p>$6.800</p>
-                    <img src="assets/img/mermeladaciruela.jpg" alt="Mermelada de ciruela">
-                    <button class="carrito-nov">Añadir al carrito</button>
-                </article>
-                <article class="productosnove">
-                    <h3>Platano Deshidratado, 500GR</h3>
-                    <p>$5.500</p>
-                    <img src="assets/img/platanoseco.jpg" alt="Platano deshidratado">
-                    <button class="carrito-nov">Añadir al carrito</button>
-                </article>
+            <h2 class="text-center my-4">Novedades</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card text-center shadow">
+                        <img src="assets/img/kiwi-dried-white.jpg" class="card-img-top" alt="Kiwi deshidratado">
+                        <div class="card-body">
+                            <h3 class="card-title">Kiwi deshidratado 500 GR</h3>
+                            <p class="card-text">$5.000</p>
+                            <button class="btn btn-success">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center shadow">
+                        <img src="assets/img/mermeladaciru.jpg" class="card-img-top" alt="Mermelada de ciruela">
+                        <div class="card-body">
+                            <h3 class="card-title">Mermelada de ciruela, 500GR</h3>
+                            <p class="card-text">$6.800</p>
+                            <button class="btn btn-success">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center shadow">
+                        <img src="assets/img/platanoseco.jpg" class="card-img-top" alt="Plátano deshidratado">
+                        <div class="card-body">
+                            <h3 class="card-title">Plátano Deshidratado, 500GR</h3>
+                            <p class="card-text">$5.500</p>
+                            <button class="btn btn-success">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    
 
-    <footer>
+    <footer class="bg-dark text-white text-center py-3 mt-4">
         <p>Frutal, derechos reservados</p>
-        <div class="redes-sociales">
-            <a href="https://wa.me/00112233">WhatsApp <img src="assets/img/wspicono.png" alt="WhatsApp"></a>
-            <a href="https://www.instagram.com/lacosecha.llanquihue?igsh=ZzdreTdha3I5cjVi">Instagram <img src="assets/img/instagram.png" alt="Instagram"></a>
-            <a href="mailto:contacto@frutal.com">Correo <img src="assets/img/correo.png" alt="Correo"></a>
+        <div class="d-flex justify-content-center gap-3">
+            <a class="btn btn-outline-light" href="https://wa.me/00112233">WhatsApp</a>
+            <a class="btn btn-outline-light" href="https://www.instagram.com/lacosecha.llanquihue?igsh=ZzdreTdha3I5cjVi">Instagram</a>
+            <a class="btn btn-outline-light" href="mailto:contacto@frutal.com">Correo</a>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
