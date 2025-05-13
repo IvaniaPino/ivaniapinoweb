@@ -13,6 +13,19 @@ h2 {
   animation: slideInDown 0.8s ease-out;
 }
 
+/* Definición de la animación */
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
 header {
   color: #FE4F2D;
   background: linear-gradient(to right, #82954B, #BABD42);
@@ -261,6 +274,18 @@ nav a {
 nav a:hover {
   background-color: #90D1CA;
   transform: translateY(-2px);
+}
+
+/* Animación para nav ul */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .contenedor {
