@@ -1,8 +1,7 @@
-/* ====================
-   BASE Y TIPOGRAFÍA
-==================== */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Noto Serif', serif;
   background-color: #90D1CA;
   color: #FE4F2D;
   margin: 0;
@@ -14,11 +13,9 @@ h2 {
   text-align: center;
   margin-top: 20px;
   animation: slideInDown 0.8s ease-out;
+  font-size: xx-large;
 }
 
-/* ====================
-   HEADER
-==================== */
 header {
   color: #FE4F2D;
   background: linear-gradient(to right, #82954B, #BABD42);
@@ -31,37 +28,6 @@ header {
   animation: pulseHeader 2s infinite alternate;
 }
 
-/* ====================
-   NAVEGACIÓN
-==================== */
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  animation: slideInLeft 0.6s 0.3s ease;
-}
-
-nav li {
-  display: inline;
-  padding: 10px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #FE4F2D;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-nav a:hover {
-  background-color: #90D1CA;
-  transform: translateY(-2px);
-}
-
-/* ====================
-   BOTONES
-==================== */
 .boton-transparente {
   background-color: rgba(254, 79, 45, 0.3);
   color: #FE4F2D;
@@ -101,9 +67,6 @@ input[type=submit]:hover,
   color: #16C47F;
 }
 
-/* ====================
-   CARRITO
-==================== */
 .carrito,
 .carrito-btn,
 .carrito-nov {
@@ -159,9 +122,6 @@ input[type=submit]:hover,
   opacity: 0;
 }
 
-/* ====================
-   PRODUCTOS
-==================== */
 .productos-container,
 .productos-novedades {
   display: grid;
@@ -195,16 +155,18 @@ input[type=submit]:hover,
 
 .productos h3,
 .productosnov h3 {
-  color: #BABD42;
+  color: #0f0f0f;
   margin-top: 0;
   margin-bottom: 10px;
+  font-size: 0.7em;
 }
 
 .productos p,
 .productosnov p {
-  color: #BABD42;
+  color: #050505;
   margin-top: 0;
   margin-bottom: 15px;
+  font-size: xx-small;
 }
 
 .productos img,
@@ -213,13 +175,46 @@ input[type=submit]:hover,
   height: auto;
   border-radius: 5px;
   display: block;
-  margin: 0 auto 10px;
+  margin: 0 auto;
+  margin-bottom: 10px;
   animation: pulse 1.5s infinite alternate;
 }
 
-/* ====================
-   FORMULARIO Y VIDEO
-==================== */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  animation: slideInLeft 0.6s 0.3s ease;
+}
+
+nav li {
+  display: inline;
+  padding: 10px;
+  animation: fadeInSlide 0.5s ease forwards 0.2s; /* Ejemplo de animación para los items del menú */
+  opacity: 0; /* Inicialmente ocultos */
+}
+
+nav li:nth-child(1) { animation-delay: 0.2s; }
+nav li:nth-child(2) { animation-delay: 0.4s; }
+nav li:nth-child(3) { animation-delay: 0.6s; }
+nav li:nth-child(4) { animation-delay: 0.8s; }
+nav li:nth-child(5) { animation-delay: 1s; }
+nav li:nth-child(6) { animation-delay: 1.2s; }
+nav li:nth-child(7) { animation-delay: 1.4s; }
+
+nav a {
+  text-decoration: none;
+  color: #FE4F2D;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #90D1CA;
+  transform: translateY(-2px);
+}
+
 .contenedor {
   display: flex;
   flex-direction: column;
@@ -249,112 +244,170 @@ textarea {
   border-radius: 5px;
 }
 
-/* ====================
-   MEDIA QUERIES
-==================== */
-@media (max-width: 768px) {
-  .productos-container,
-  .productos-novedades {
-    grid-template-columns: 1fr;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  footer .redes-sociales {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  footer .redes-sociales a {
-    width: 80%;
-    text-align: center;
-  }
-
-  .tabla-carrito {
-    width: 100%;
-  }
-
-  .boton-finalizar {
-    width: 80%;
+  to {
+    opacity: 1;
   }
 }
 
-/* ====================
-   ANIMACIONES
-==================== */
 @keyframes slideInDown {
-  0% {
-    transform: translateY(-100px);
+  from {
+    transform: translateY(-30px);
     opacity: 0;
   }
-  100% {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulseHeader {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
     transform: translateY(0);
     opacity: 1;
   }
 }
 
 @keyframes slideInLeft {
-  0% {
-    transform: translateX(-100px);
+  from {
+    transform: translateX(-50px);
     opacity: 0;
   }
-  100% {
+  to {
     transform: translateX(0);
     opacity: 1;
   }
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes zoomIn {
-  0% {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
 @keyframes pulse {
-  0% {
+  from {
     transform: scale(1);
   }
-  100% {
-    transform: scale(1.05);
-  }
-}
-
-@keyframes pulseHeader {
-  0% {
-    transform: scale(1);
-  }
-  100% {
+  to {
     transform: scale(1.03);
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
+/* Media Queries para hacerlo Responsive */
+
+/* Pantallas más pequeñas (móviles) */
+@media (max-width: 767px) {
+  h2 {
+    font-size: x-large; /* Reduce el tamaño del título */
+  }
+
+  header {
+    font-size: 1.2em; /* Reduce el tamaño del texto del header */
+    padding: 10px;
+  }
+
+  .productos-container,
+  .productos-novedades {
+    grid-template-columns: 1fr; /* Una columna para los productos */
+  }
+
+  .tabla-carrito {
+    width: 100%; /* La tabla ocupa todo el ancho */
+  }
+
+  .tabla-carrito th,
+  .tabla-carrito td {
+    padding: 15px; /* Reduce el padding de las celdas de la tabla */
+    font-size: 0.9em; /* Reduce el tamaño de la fuente en la tabla */
+  }
+
+  .boton-finalizar {
+    width: 100%; /* El botón de finalizar ocupa todo el ancho */
+    padding: 10px;
+    font-size: 1em;
+  }
+
+  nav ul {
+    flex-direction: column; /* El menú se muestra en columna */
+    align-items: center;
+  }
+
+  nav li {
+    display: block; /* Los items del menú ocupan una línea completa */
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  nav a {
+    display: block; /* Los enlaces del menú ocupan todo el ancho del li */
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .contenedor {
+    padding: 10px;
+  }
+
+  .formulario-container {
+    padding: 10px;
+  }
+
+  input,
+  textarea {
+    font-size: 1em; 
+  }
+}
+
+/* Pantallas medianas (tabletas) */
+@media (min-width: 768px) and (max-width: 991px) {
+  h2 {
+    font-size: xx-large; /* Mantiene un tamaño adecuado */
+  }
+
+  .productos-container,
+  .productos-novedades {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .tabla-carrito {
+    width: 95%; }
+
+  .tabla-carrito th,
+  .tabla-carrito td {
+    padding: 20px; 
+    font-size: 1em;
+  }
+}
