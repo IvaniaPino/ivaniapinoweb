@@ -1,0 +1,64 @@
+body {
+  font-family: $fuente-principal;
+  background-color: $color-fondo-principal;
+  color: $color-texto-principal;
+  margin: 0;
+  padding: 0;
+  animation: fadeIn 1s ease-out;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  animation: slideInDown 0.8s ease-out;
+}
+
+header {
+  color: $color-texto-principal;
+  background: linear-gradient(to right, $color-fondo-header-gradient-start, $color-fondo-header-gradient-end);
+  padding: 15px;
+  text-align: center;
+  border-radius: $radio-borde;
+  font-family: $fuente-secundaria;
+  font-size: 1.5em;
+  transition: background $transicion-rapida, transform $transicion-rapida;
+  animation: pulseHeader 2s infinite alternate;
+}
+
+.boton-transparente {
+  background-color: rgba($color-principal, 0.3);
+  color: $color-principal;
+  border: none;
+  padding: 10px 20px;
+  border-radius: $radio-borde-input;
+  cursor: pointer;
+  transition: background-color $transicion-rapida, transform $transicion-rapida;
+
+  &:hover {
+    background-color: rgba($color-principal, 0.6);
+    transform: scale(1.05);
+  }
+}
+
+input[type="submit"],
+.boton-finalizar {
+  background-color: $color-exito;
+  color: $color-blanco; // Texto en botones de éxito es blanco
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: $radio-borde-input;
+  transition: background-color $transicion-rapida, color $transicion-rapida, transform $transicion-rapida;
+
+  &:hover {
+    background-color: $color-exito-hover;
+    transform: scale(1.03);
+  }
+}
+
+.boton-finalizar {
+  padding: 12px 20px;
+  margin-top: 20px;
+  color: $color-texto-exito;
+}

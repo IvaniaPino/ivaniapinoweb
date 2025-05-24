@@ -1,0 +1,140 @@
+.boton-transparente {
+  background-color: rgba($color-principal, 0.3);
+  color: $color-principal;
+  border: none;
+  padding: 10px 20px;
+  border-radius: $radio-borde-input;
+  cursor: pointer;
+  transition: background-color $transicion-rapida, transform $transicion-rapida;
+
+  &:hover {
+    background-color: rgba($color-principal, 0.6);
+    transform: scale(1.05);
+  }
+}
+
+input[type=submit],
+.boton-finalizar {
+  background-color: $color-exito;
+  color: $color-blanco; // Asumiendo que el texto de botón de éxito es blanco
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: $radio-borde-input;
+  transition: background-color $transicion-rapida, color $transicion-rapida, transform $transicion-rapida;
+
+  &:hover {
+    background-color: $color-exito-hover;
+    transform: scale(1.03);
+  }
+}
+
+.boton-finalizar {
+  padding: 12px 20px;
+  margin-top: 20px;
+  color: $color-texto-exito;
+}
+.carrito,
+.carrito-btn,
+.carrito-nov {
+  background-color: transparent;
+  color: $color-principal;
+  border: 2px solid $color-borde-carrito;
+  padding: 8px 12px;
+  border-radius: $radio-borde-input;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color $transicion-rapida, color $transicion-rapida, transform $transicion-rapida;
+
+  &:hover {
+    background-color: $color-fondo-hover-carrito;
+    color: $color-borde-carrito;
+    transform: scale(1.05);
+  }
+}
+
+.contenedor-carrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.tabla-carrito {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+  animation: zoomIn 0.5s ease-out;
+}
+
+.tabla-carrito th,
+.tabla-carrito td {
+  padding: 30px;
+  border: 1px solid $color-gris-medio;
+  text-align: center;
+}
+
+.tabla-carrito th {
+  background-color: $color-exito;
+  color: $color-blanco; // Asumiendo texto blanco para la cabecera de la tabla
+}
+
+.total-compra {
+  margin-top: 10px;
+  text-align: center;
+  animation: fadeIn 0.6s ease-out 0.3s forwards;
+  opacity: 0;
+}
+.productos-container,
+.productos-novedades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 960px;
+  animation: fadeInUp 0.7s ease-out;
+}
+
+.productos,
+.productosnov {
+  border: 1px solid $color-borde-producto;
+  border-radius: $radio-borde-producto;
+  padding: 15px;
+  text-align: center;
+  background-color: $color-fondo-producto;
+  box-shadow: $sombra-producto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform $transicion-rapida;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  h3 {
+    color: $color-titulo-producto;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: small;
+  }
+
+  p {
+    color: $color-texto-producto;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: $radio-borde-input; // Usando el radio de borde de input para las imágenes
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    animation: pulse 1.5s infinite alternate;
+  }
+}
