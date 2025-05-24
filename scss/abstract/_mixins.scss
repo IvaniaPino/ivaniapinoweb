@@ -1,0 +1,25 @@
+// Mixin para transiciones comunes
+@mixin transition($properties...) {
+    transition: $properties;
+}
+
+// Mixin para estilos de botones base
+@mixin btn-base($bg-color, $text-color, $padding, $font-size, $border-radius: 5px) {
+    background-color: $bg-color !important;
+    color: $text-color !important;
+    border: none;
+    padding: $padding;
+    font-size: $font-size;
+    border-radius: $border-radius;
+    cursor: pointer;
+    @include transition(background-color 0.3s, color 0.3s, transform 0.3s);
+    display: inline-block;
+    text-decoration: none;
+}
+
+// Mixin para definir @keyframes
+@mixin keyframes($name) {
+    @keyframes #{$name} {
+        @content;
+    }
+}

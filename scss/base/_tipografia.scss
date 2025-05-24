@@ -1,0 +1,21 @@
+
+@import '../base/tipografia'; // Importa las variables
+
+h1 {
+    font-family: $font-stack-noto-serif;
+    color: $color-acento-naranja;
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    animation: slideInDown 0.8s ease-out;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation: slideInDown 0.8s ease-out;
+    font-size: xx-large;
+    color: $color-acento-naranja;
+    font-family: $font-stack-outfit;
+}

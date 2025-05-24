@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto Frutal | Preguntas, Pedidos y Atención al Cliente de Tu Frutería Online</title>
+    <meta name="description" content="¿Necesitas contactar a Frutal? Envíanos tus consultas, sugerencias o pedidos especiales de frutas frescas, secas y mermeladas. ¡Estamos aquí para ayudarte!">
+    <meta name="keywords" content="contacto frutal, atención al cliente, consultas frutas, pedidos al por mayor, sugerencias, soporte frutería, comprar frutas online, Chile">
+
+    <meta property="og:title" content="Contacto Frutal | Preguntas, Pedidos y Atención al Cliente de Tu Frutería Online">
+    <meta property="og:description" content="¿Necesitas contactar a Frutal? Envíanos tus consultas, sugerencias o pedidos especiales de frutas frescas, secas y mermeladas. ¡Estamos aquí para ayudarte!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.tufrutal.com/pages/contacto.html">
+    <meta property="og:image" content="https://www.tufrutal.com/assets/img/frutal-contacto-share.jpg">
+    <meta property="og:locale" content="es_ES">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contacto Frutal | Preguntas, Pedidos y Atención al Cliente de Tu Frutería Online">
+    <meta name="twitter:description" content="¿Necesitas contactar a Frutal? Envíanos tus consultas, sugerencias o pedidos especiales de frutas frescas, secas y mermeladas. ¡Estamos aquí para ayudarte!">
+    <meta name="twitter:image" content="https://www.tufrutal.com/assets/img/frutal-contacto-share.jpg">
+    <link rel="canonical" href="https://www.tufrutal.com/pages/contacto.html">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://www.youtube.com"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="bg-success text-white text-center py-3">
+        <h1 class="fw-bold">Contacta con Frutal</h1>
+        <p class="lead">Estamos aquí para resolver tus dudas, escuchar tus sugerencias y atender tus necesidades.</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Navegación principal de Frutal">
+        <div class="container">
+            <a class="navbar-brand d-lg-none" href="../index.html">Frutal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="frutasfrescas.html">Frutas Frescas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="frutassecas.html">Frutas Secas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mermeladas.html">Mermeladas Artesanales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="recetasconfrutas.html">Recetas con Frutas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="carrito.html">Mi Carrito</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contacto.html" aria-current="page">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <main class="container py-4 text-center">
+        <section class="mb-5" aria-labelledby="historia-frutal-titulo">
+            <h2 id="historia-frutal-titulo">Conoce Nuestra Historia</h2>
+            <p class="lead mb-4">Descubre cómo en Frutal nos dedicamos a llevar la mejor selección de frutas y productos naturales directamente a tu mesa.</p>
+            <div class="ratio ratio-16x9 shadow rounded">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/O2AZCk3e8gM" title="Frutas de Chile / Fruits from Chile" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="card shadow mx-auto p-4" style="max-width: 600px;" aria-labelledby="formulario-contacto-titulo">
+            <h2 id="formulario-contacto-titulo" class="mb-4">¿Dudas? ¿Peticiones de Productos? ¿Compras al por Mayor? ¡Hablemos!</h2>
+            <p>Utiliza nuestro formulario de contacto para cualquier consulta sobre nuestros productos.</p>
+            <form action="/enviar_formulario" method="post">
+                <fieldset>
+                    <legend class="h4 text-success mb-3">Datos de Contacto</legend>
+                    <div class="mb-3 text-start">
+                        <label for="nombre" class="form-label">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Escribe tu nombre y apellido" required aria-required="true">
+                    </div>
+                    <div class="mb-3 text-start">
+                        <label for="correo" class="form-label">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" class="form-control" placeholder="Ejemplo: correo@dominio.com" required aria-required="true">
+                    </div>
+                    <div class="mb-3 text-start">
+                        <label for="telefono" class="form-label">Teléfono (opcional):</label>
+                        <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="Ejemplo: +56 9 1234 5678">
+                    </div>
+                    <div class="mb-3 text-start">
+                        <label for="motivo" class="form-label">Motivo de Contacto:</label>
+                        <textarea id="motivo" name="motivo" class="form-control" rows="5" required placeholder="Describe tu consulta, sugerencia o pedido aquí..." aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success btn-lg mt-3">Enviar Mensaje</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section class="mt-5 p-4 bg-verde-inicio rounded shadow-sm">
+            <h2 class="mb-3">Otras Formas de Contacto</h2>
+            <p class="lead">También puedes contactarnos directamente:</p>
+            <ul class="list-unstyled">
+                <li><strong>Teléfono:</strong> <a href="tel:+56912345678">+56 9 1234 5678</a></li>
+                <li><strong>Correo Electrónico:</strong> <a href="mailto:contacto@frutal.com">contacto@frutal.com</a></li>
+                <li><strong>Horario de Atención:</strong></li>
+                <li>Lunes a Sábado: 09:00 hrs - 19:00 hrs</li>
+                <li>Domingo: Cerrado</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>© 2025 Frutal. Todos los derechos reservados.</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a class="btn btn-outline-light" href="https://wa.me/00112233" target="_blank" rel="noopener noreferrer" aria-label="Contactar a Frutal por WhatsApp">WhatsApp</a>
+            <a class="btn btn-outline-light" href="https://www.instagram.com/lacosecha.llanquihue?igsh=ZzdreTdha3I5cjVi" target="_blank" rel="noopener noreferrer" aria-label="Visitar el Instagram de Frutal">Instagram</a>
+            <a class="btn btn-outline-light" href="mailto:contacto@frutal.com" aria-label="Enviar correo electrónico a Frutal">Correo</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

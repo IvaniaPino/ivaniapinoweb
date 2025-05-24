@@ -1,0 +1,20 @@
+// Asegúrate de importar las variables necesarias si aún no se encuentran en main.scss
+@import '../abstract/variables'; // Asegúrate de que las variables están disponibles aquí
+
+/* Estilo general del body */
+body {
+    font-family: $font-family-sans-serif;
+    background-color: $color-fondo-suave;
+    color: $color-texto-general-oscuro;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1s ease-out; // Animación definida en _animations.scss
+    font-size: $font-size-base;
+    line-height: 1.6;
+    box-sizing: border-box;
+
+    // Media query para el tamaño de fuente base del body en pantallas pequeñas
+    @media (max-width: $breakpoint-xs) {
+        font-size: $font-size-mobile;
+    }
+}

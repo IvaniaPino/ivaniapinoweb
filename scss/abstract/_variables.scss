@@ -1,0 +1,27 @@
+// Variables de colores
+$color-fondo-suave: #90D1CA;
+$color-acento-naranja: #FE4F2D;
+$color-verde-oscuro: #015551;
+$color-verde-claro: #16C47F;
+$color-verde-gradiente-inicio: #82954B;
+$color-verde-gradiente-fin: #BABD42;
+$color-texto-general-claro: #f8f9fa;
+$color-texto-general-oscuro: #212529;
+$color-texto-precio-card: #F7570C;
+$color-footer-fondo: #212529;
+$color-footer-botones: #ffffff;
+
+// Variables de tipografía
+$font-family-serif: 'Noto Serif', serif;
+$font-family-sans-serif: 'Outfit', sans-serif;
+
+// Variables de tamaño de fuente base responsivo
+$font-size-base: 16px;
+$font-size-mobile: 14px;
+
+// Variables de breakpoints (basadas en Bootstrap)
+$breakpoint-xs: 575.98px; // Extra small devices (phones)
+$breakpoint-sm: 576px;   // Small devices (phones large, tablets portrait)
+$breakpoint-md: 768px;   // Medium devices (tablets landscape, small desktops)
+$breakpoint-lg: 992px;   // Large devices (desktops)
+$breakpoint-xl: 1200px;  // Extra large devices (large desktops)

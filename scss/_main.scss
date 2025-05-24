@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+// 1. Utilities (variables, mixins)
+@import 'utilities/variables';
+
+// 2. Base (global styles, typography, animations)
+@import 'base/base';
+@import 'base/typography';
+@import 'base/animations';
+
+// 3. Layout (header, footer, navigation, sections)
+@import 'layout/header';
+@import 'layout/navbar';
+@import 'layout/footer';
+@import 'layout/sections';
+
+// 4. Components (buttons, cards, forms)
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/forms';
+
+// 5. Pages (specific page styles, e.g., cart)
+@import 'pages/cart';
+
+// Media Queries (se mantienen aquí ya que afectan múltiples elementos)
+
+// --- Media Query para pantallas más pequeñas (móviles) ---
+@media (max-width: $breakpoint-sm) { 
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: x-large;
+    }
+
+    header {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    .tabla-carrito {
+        width: 100%;
+        
+        th, td { 
+            padding: 10px;
+            font-size: 0.8em;
+        }
+    }
+
+    .boton-finalizar {
+        width: 100%;
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .navbar-nav {
+        .nav-item {
+            display: block;
+            margin: 5px 0;
+            text-align: center;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    }
+
+    .formulario-container {
+        padding: 15px;
+    }
+
+    input,
+    textarea {
+        font-size: 1em;
+    }
+}
+
+// --- Media Query para pantallas medianas (tabletas) ---
+@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) { 
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: xx-large;
+    }
+
+    .tabla-carrito {
+        width: 95%;
+        
+        th, td { 
+            padding: 15px;
+            font-size: 0.9em;
+        }
+    }
+}
+

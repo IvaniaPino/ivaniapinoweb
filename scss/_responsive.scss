@@ -1,0 +1,33 @@
+@media (max-width: 768px) {
+    .productos-container,
+    .productos-novedades {
+      grid-template-columns: 1fr;
+    }
+  
+    nav {
+      ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  
+    footer {
+      .redes-sociales {
+        flex-direction: column;
+        align-items: center;
+  
+        a {
+          width: 80%;
+          text-align: center;
+        }
+      }
+    }
+  
+    .tabla-carrito {
+      width: 100%;
+    }
+  
+    .boton-finalizar {
+      width: 80%;
+    }
+  }
