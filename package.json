@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/IvaniaPino/ivaniapinoweb/issues"
   },
-  "homepage": "https://github.com/IvaniaPino/ivaniapinoweb#readme"
+  "homepage": "https://github.com/IvaniaPino/ivaniapinoweb#readme",
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
 }

@@ -2,8 +2,8 @@
 @import 'abstracts/mixins';
 
 @import 'base/reset';
-@import 'base/typography';
-@import 'base/base';
+@import 'base/topografia';
+@import 'base/bases';
 
 @import 'layout/header';
 @import 'layout/footer';
@@ -15,3 +15,5 @@
 @import 'componentes/animaciones';
 
 @import 'temas/theme';
+@import '_responsive';
+@import 'extend';

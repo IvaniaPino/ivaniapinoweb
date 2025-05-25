@@ -1,0 +1,76 @@
+// scss/abstracts/_extends.scss
+
+// Estilos de media query reutilizables para el tamaño de fuente del body
+%responsive-font-body {
+  @media (max-width: 575.98px) {
+    font-size: var(--font-size-mobile);
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: var(--font-size-mobile);
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: calc(var(--font-size-base) * 0.95);
+  }
+  @media (min-width: 992px) {
+    font-size: var(--font-size-base);
+  }
+}
+
+// Estilos de media query reutilizables para h1
+%responsive-font-h1 {
+  @media (max-width: 575.98px) {
+    font-size: 2rem;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 2.5rem;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 3rem;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 3.5rem;
+  }
+  @media (min-width: 1200px) {
+    font-size: 3.8rem;
+  }
+}
+
+// Estilos de media query reutilizables para h2
+%responsive-font-h2 {
+  @media (max-width: 575.98px) {
+    font-size: 1.6rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 1.9rem;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 2.1rem;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 2.2rem;
+  }
+  @media (min-width: 1200px) {
+    font-size: 2.3rem;
+  }
+}
+
+// Placeholder selector para estilos base de botón
+%btn-base {
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  display: inline-block;
+  text-decoration: none;
+
+  @media (max-width: 575.98px) {
+    font-size: 0.9rem;
+    padding: 10px 18px;
+  }
+}
+
+// Otros extends que puedas necesitar (ej. %hidden, %clearfix, etc.)
