@@ -1,0 +1,16 @@
+.bg-verde-inicio {
+  background-color: var(--color-verde-gradiente-inicio);
+}
+
+.bg-verde-gradiente {
+  background: linear-gradient(to right, var(--color-verde-gradiente-inicio), var(--color-verde-gradiente-fin));
+}
+
+.texto-contraste {
+  color: white;
+
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+}

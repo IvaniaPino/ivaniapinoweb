@@ -1,0 +1,8 @@
+header {
+  background: linear-gradient(to right, var(--color-verde-gradiente-inicio), var(--color-verde-gradiente-fin));
+  padding: 20px;
+  text-align: center;
+  color: var(--color-texto-general-claro);
+  font-size: 2em;
+  animation: pulseHeader 2s infinite alternate;
+}

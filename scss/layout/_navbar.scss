@@ -1,0 +1,9 @@
+.navbar {
+  background: linear-gradient(to right, var(--color-verde-gradiente-inicio), var(--color-verde-gradiente-fin));
+  padding: 10px 0;
+}
+
+.navbar-nav .nav-link {
+  color: var(--color-texto-general-claro);
+  text-transform: uppercase;
+}
